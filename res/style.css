@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(50, 59, 87);
+}
+
+.frame {
+    width: 350px;
+    height:  650px;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 35px;
+    position: relative;
+
+}
+
+.frame {
+    background-image: url('./img/wallpaper.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.top-dock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.top-dock p {
+    color: white;
+
+}
+
+
+
+.dinamic-island {
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    margin: 10px auto;
+    border-radius: 39px;
+    transition: all 0.5s;
+    padding: 3px;
+}
+
+.dinamic-island:hover {
+    width: 180px;
+    height: 32px;
+    
+}
+
+.dinamic-island .camera {
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(70, 71, 76);
+    border-radius: 50%;
+    background-color: rgba(14, 13, 13, 0.516);
+    position: absolute;
+    left: 180px;
+}
+
+
+.status img {
+    width: 15px;
+}
+
+.home {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+.bottom-dock {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 90%;
+    padding: 10px;
+    bottom: 10px;
+    left: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 25px;
+    
+}
+
